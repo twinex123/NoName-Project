@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+	background: #222831;
+}
+.form-box{
+    margin-top: 80px;
+    margin-left: 25px;
+}
+form{
+    margin-top: 25px;
+}
+.alert-msg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F05454;
+}
+#input-form{
+    padding: 20px 44.3%;
+    border: 1px solid #F05454;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+#input-form:active{
+    border: 1px solid #F05454;
+}
+textarea{
+    padding: 20px 30px;
+    border: 1px solid #F05454;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 10px;
+    color: white;
+    resize: none;
+}
+textarea:active{
+    border: 1px solid #F05454;
+}
+.btn-form{
+    background-color: #F05454;
+    color: white;
+    padding: 20px 48.3%;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.title-post{
+    color: white;
+}
+
+/*@media screen and (max-width:600px) {
+    #input-form{
+        padding: 20px 24%;
+    }
+}*/
+@media only screen and (max-width: 767px) {
+    #input-form{
+        padding: 20px 24%;
+    }
+    textarea{
+        height: 20em;
+        width: 21.3em;
+    }
+    .btn-form{
+        padding: 20px 40.5%;
+    }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    #input-form{
+        padding: 20px 36%;
+    }
+    textarea{
+        height: 20em;
+        width: 45em;
+    }
+    .btn-form{
+        padding: 20px 45%;
+    }
+}
