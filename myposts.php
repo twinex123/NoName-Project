@@ -1,6 +1,6 @@
 <?php
-require("actions/posts/myQuestions.php");
 require("actions/users/securityAction.php");
+require("actions/posts/myQuestions.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,9 +13,16 @@ require("actions/users/securityAction.php");
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <style>
+        .User a{
+            color: white;
+        }
+    </style>
+
     <?php include 'includes/navbar.php'; ?>
 
     <div class="content">
+        <h1 class="title-post">My posts</h1>
         <div class="posts">
             <?php
             while($question = $getQuestions->fetch()){
@@ -26,11 +33,16 @@ require("actions/users/securityAction.php");
                             <?= $question['title']; ?>
                         </div>
                         <div class="date">
-                            <?= $question['publication_date']; ?>
+                            <?= ", ".$question['publication_date']; ?>
                         </div>
                     </div>
                     <div class="content-card">
                         <?= $question['content']; ?>
+                    </div>
+                    <div class="footer">
+                        <div class="modifyBtn">
+                            <button onclick="window.location.href='editpost.php?id=<?= $question['id']; ?>'">Modify the post</button>
+                        </div>
                     </div>
                 </div>
                 <?php
@@ -38,29 +50,7 @@ require("actions/users/securityAction.php");
             ?>
         </div>
     </div>
-    <script>
-                
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop();
-            if (scroll > 10) {
-                $(".navigation").css("transition" , "0.3s");
-                $(".navigation").css("background" , "#222831");
-                $(".navigation").css("top" , "0");
-                $(".navigation").css("left" , "0");
-                $(".navigation").css("margin-bottom" , "15px");
-                $(".userBx").css("margin-left" , "10px");
-                $(".userBx").css("margin-top" , "8px");
-                $(".tools").css("margin-left" , "20px");
-                $(".tools").css("margin-top" , "30px");
-            }
+    <script src="assets/js/scroll.js"></script>
 
-            else{
-                $(".navigation").css("background" , "transparent");  	
-            }
-        })
-    })
-
-    </script>
 </body>
 </html>

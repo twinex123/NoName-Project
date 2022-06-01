@@ -14,6 +14,9 @@
             
         </div>
         <div class="tools">
+            <div class="User">
+                <a href="myposts.php"><i class="fa-solid fa-image-portrait"></i></a>
+            </div>
             <div class="WriteQuestion">
                 <a href="publish.php"><i class="fa-solid fa-pen"></i></a>
             </div>

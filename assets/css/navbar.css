@@ -53,7 +53,6 @@ body{
 }
 .navigation .tools{
     position: relative;
-    width: 60px;
     height: 60px;
     display: flex;
     float: right;
@@ -68,8 +67,9 @@ body{
     margin-right: 20px;
     color: grey;
 }
-.QuitRoom{
-    right: 20px;
+.User a{
+    margin-right: 20px;
+    color: grey;
 }
 .QuitRoom a{
     color: grey;

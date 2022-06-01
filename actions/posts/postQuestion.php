@@ -24,6 +24,8 @@ if(isset($_POST['publish'])){
             )
         );
 
+        $succesMsg = "Successfully published your post!";
+
         header("Location: room.php");
 
     }else{

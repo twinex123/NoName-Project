@@ -1,5 +1,4 @@
 <?php
-session_start();
 require('actions/users/securityAction.php');
 ?>
 <!DOCTYPE html>
@@ -10,10 +9,17 @@ require('actions/users/securityAction.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/room.css">
     <link rel="stylesheet" href="assets/css/scrollbar.css">
-    <title>*** | Room</title>
+    <title>InterCollege | Rooms</title>
 </head>
 <body>
     <?php include 'includes/navbar.php'; ?>
     
+    <?php
+        
+        if(isset($successMsg)){
+            echo "<div class='alert-msg' role='alert'>".$successMsg."</div>";
+        }
+
+    ?>
 </body>
 </html>

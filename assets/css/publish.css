@@ -41,6 +41,7 @@ textarea{
     margin-top: 10px;
     color: white;
     resize: none;
+    font-family: "Montserrat", sans-serif;
 }
 textarea:active{
     border: 1px solid #F05454;

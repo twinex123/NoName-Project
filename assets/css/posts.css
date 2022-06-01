@@ -19,8 +19,13 @@ body{
     border-radius: 5px;
     padding: 10px 10px;
 }
+.card:hover{
+    transition:0.5s;
+    transform: scale(1.05);
+}
 .head{
     display: flex;
+    right: 0;
 }
 .date p{
     right: 30px;
@@ -31,6 +36,27 @@ body{
 }
 .title{
     border-bottom: 1px solid grey;
+}
+
+.modifyBtn button{
+    padding: 10px 15px;
+    color: #F05454;
+    background-color: #222831;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #F05454;
+    margin-top: 10px;
+}
+.modifyBtn button:hover{
+    padding: 10px 15px;
+    color: #222831;
+    background-color: #F05454;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #222831;
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
