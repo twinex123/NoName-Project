@@ -1,0 +1,46 @@
+.vote{
+    text-align: right;
+    margin-top: 20px;
+}
+.vote form{
+    display: inline-block;
+}
+.vote_bar{
+    display: inline-block;
+    width: 150px;
+    height: 4px;
+    background-color: rgb(194, 49, 33);
+}
+.vote_progress{
+    height:4px;
+    width: 0%;
+    background-color: rgb(11, 239, 102);
+}
+.vote_btns{
+    margin-top: 10px;
+    text-align: right;
+}
+.vote_btn{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-left: 10px;
+    display: inline-block;
+    transition: color 0.2s ease;
+    color: grey;
+}
+.vote_like:hover{
+    color: rgb(11, 239, 102);
+    cursor: pointer;
+}
+.vote_dislike:hover{
+    color: rgb(194, 49, 33);
+    cursor: pointer;
+}
+.is-liked .vote_like{
+    color: rgb(11, 239, 102);
+}
+.is-disliked .vote_dislike{
+    color: rgb(194, 49, 33);
+}

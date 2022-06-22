@@ -48,7 +48,7 @@ body{
 }*/
 .username{
     white-space: nowrap; 
-    margin-left: 20px;
+    margin-left:20px;
     color: grey;
 }
 .navigation .tools{
@@ -72,5 +72,9 @@ body{
     color: grey;
 }
 .QuitRoom a{
+    color: grey;
+}
+.userBx i{
+    margin-left:20px;
     color: grey;
 }

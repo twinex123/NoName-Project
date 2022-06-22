@@ -32,7 +32,7 @@ require("actions/posts/editPost.php");
                 ?>
                 <form method="POST">
                     <input type="text" placeholder="Title" id="input-form" name="title" value="<?php echo $postTitle; ?>"><br>
-                    <textarea type="text" placeholder="Content" name="content" cols="207" rows="20"><?php echo $postContent; ?></textarea><br>
+                    <textarea type="text" placeholder="Content" name="content" cols="215" rows="20"><?php echo $postContent; ?></textarea><br>
                     <button type="submit" class="btn-form" name="modify">Modify</button><br>
                 </form>
                 <?php

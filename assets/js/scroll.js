@@ -8,6 +8,7 @@
                 $(".navigation").css("top" , "0");
                 $(".navigation").css("left" , "0");
                 $(".navigation").css("margin-bottom" , "15px");
+                $(".navigation").css("z-index", "1");
                 $(".userBx").css("margin-left" , "10px");
                 $(".userBx").css("margin-top" , "8px");
                 $(".tools").css("margin-left" , "20px");

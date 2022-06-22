@@ -9,3 +9,151 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background: #222831;
 }
+main{
+    margin-top: 80px;
+    padding: 20px 8%;
+}
+.title{
+    color: white;
+}
+.channels{
+    color: #F05454;
+    margin-top: 25px;
+}
+.createChannel button{
+    bottom: 0;
+    right: 0;
+    padding: 20px 23px;
+    border-radius: 50%;
+    color: white;
+    background-color: #F05454;
+    border: none;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+.card{
+    margin-top: 15px;
+    background-color: #2d2e34;
+    color: #F05454;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: ease 1s;
+    width: 100%;
+}
+.card:hover{
+    border: 1px solid #F05454;
+}
+/*.card:hover{
+    transform: scaleY(1.2);
+}*/
+.date{
+    float: right;
+}
+.deleteBtn button{
+    border: none;
+    color: #F05454;
+    background-color: #222831;
+    margin-left: 10px;
+}
+
+.pin i{
+    color: #F05454;
+}
+.content{
+    padding: 20px 8%;
+}
+.transition-fade{
+    transition: 0.5s;
+    opacity: 1;
+}
+html.is-animating .transition-fade{
+    opacity: 0;
+}
+
+.square i{
+    margin-left: 10px;
+}
+.input-search{
+    padding: 10px 20px;
+    width: 85%;
+    margin-top: 10px;
+    border: 1px solid #ffc600;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+.input-search:focus{
+    border: none;
+}
+.input-search:active{
+    border: none;
+}
+.button-search{
+    padding: 10px 20px;
+    /*border: 1px solid #ffc600;*/
+    border: none;
+    background-color: #ffc600;
+    color: #222831;
+    border-radius: 5px;
+    width: 14%;
+    transition: 0.5s;
+    text-align: center;
+}
+.button-search i{
+    font-size: 15px;
+}
+.button-search:hover{
+    background-color: #222831;
+    color: #ffc600;
+    border: 1px solid #ffc600;
+    cursor: pointer;
+}
+.separation{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button-add{
+    background-color: #ffc600;
+    color: #222831;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+.private-channel{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    left: 0;
+}
+.private-channel input{
+    padding: 10px 20px;
+    width: 80%;
+    margin-top: 10px;
+    border: 1px solid #ffc600;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+.private-channel button{
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc600;
+    color: #222831;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .button-search{
+        width: 10%;
+    }
+    .button-search i{
+        margin-left: calc(-7px)
+    }
+}
+

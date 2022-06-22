@@ -21,20 +21,19 @@ form{
     margin-bottom: 10px;
     color: #F05454;
 }
+
 #input-form{
-    padding: 20px 44.3%;
     border: 1px solid #F05454;
     border-radius: 5px;
     background-color: transparent;
     margin-top: 10px;
     color: white;
     text-align: center;
-}
-#input-form:active{
-    border: 1px solid #F05454;
+    width: 95%;
+    height: 50px;
+    margin-right: 20px;
 }
 textarea{
-    padding: 20px 30px;
     border: 1px solid #F05454;
     border-radius: 5px;
     background-color: transparent;
@@ -42,28 +41,61 @@ textarea{
     color: white;
     resize: none;
     font-family: "Montserrat", sans-serif;
+    width: calc(95% - 20px * 2);
+    height: 200px; 
+    padding: 20px;
 }
 textarea:active{
-    border: 1px solid #F05454;
+    border: none;
 }
-.btn-form{
+.btnSubmit{
     background-color: #F05454;
     color: white;
-    padding: 20px 48.3%;
+    padding: 10ox 5px;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 10px;
     border-radius: 5px;
+    text-align: center;
+    width: 95%;
+}
+button{
+    padding: 0;
+    color: white;
+    background-color: #F05454;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-align: center;
+    width: 96%;
+}
+#create{
+    margin-top: 10px;
 }
 .title-post{
     color: white;
 }
 
-/*@media screen and (max-width:600px) {
-    #input-form{
-        padding: 20px 24%;
-    }
-}*/
+span{
+    color: #F05454;
+}
+select{
+    padding: 10px 15px;
+    border:none;
+    background-color: #222831;
+    color: #F05454;
+    border-radius: 5px;
+    justify-content:center;
+}
+.select{
+    display: flex;
+}
+.publish-in{
+    color: grey;
+    margin-top: 9px;
+}
+/*
 @media only screen and (max-width: 767px) {
     #input-form{
         padding: 20px 24%;
@@ -71,9 +103,6 @@ textarea:active{
     textarea{
         height: 20em;
         width: 21.3em;
-    }
-    .btn-form{
-        padding: 20px 40.5%;
     }
 }
 @media only screen and (max-width: 767px) and (orientation: landscape) {
@@ -84,7 +113,5 @@ textarea:active{
         height: 20em;
         width: 45em;
     }
-    .btn-form{
-        padding: 20px 45%;
-    }
 }
+*/

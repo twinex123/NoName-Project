@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
                 $_SESSION['id'] = $usersInfos['id'];
                 $_SESSION['username'] = $usersInfos['username'];
                 
-                header('Location: index.php');
+                header('Location: room.php');
 
             }else{
                 $errorMsg = "Your password is incorrect.";

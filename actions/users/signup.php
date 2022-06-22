@@ -16,10 +16,10 @@ if(isset($_POST['submit'])){
 
             if($checkIfUserRegistered->rowCount() == 0) {
 
-                $insertUserOnWebsite = $bdd->prepare("INSERT INTO users (username, password, inscription_date) VALUES (?, ?, NOW());");
-                $insertUserOnWebsite->execute(array($username, $password));
+                $insertUserOnWebsite = $bdd->prepare("INSERT INTO users (username, password, inscription_date, private) VALUES (?, ?, NOW() , ?);");
+                $insertUserOnWebsite->execute(array($username, $password, "public"));
                 
-                $getInfosOfUsers = $bdd->prepare("SELECT id FROM users WHERE username = ?");
+                $getInfosOfUsers = $bdd->prepare("SELECT * FROM users WHERE username = ?");
                 $getInfosOfUsers->execute(array($username));
 
                 $userInfos = $getInfosOfUsers->fetch();
@@ -28,9 +28,9 @@ if(isset($_POST['submit'])){
                 $_SESSION['id'] = $userInfos['id'];
                 $_SESSION['username'] = $userInfos['username'];
 
-                header("Location: index.php");
+                header("Location: room.php");
 
-            }else{
+            }else{ 
                 $errorMsg = "This user is already registered.";
             }
         }else{ 
