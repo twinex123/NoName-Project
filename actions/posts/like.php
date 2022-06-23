@@ -24,14 +24,36 @@ if($url_courante != "channel.php"){
             $check->execute(array($getId));
 
             if($check->rowCount() == 1){
-                if($getT==1){
+
+                $checkIfRated = $bdd->prepare("SELECT id FROM questions_rating WHERE user_id = ? AND question_id = ?");
+                $checkIfRated->execute(array($_SESSION["id"], $getId));
+
+                if($checkIfRated->rowCount() > 0){
+
+
+
+                }else{
+                    
+                    $insertRating = $bdd->prepare("INSERT INTO questions_rating(user_id, user_username, question_id, rating_action) VALUES (?, ?, ?, ?)");
+                    $insertRating->execute(array($_SESSION["id"], $_SESSION["username"], $getId, $getT));
+
+                    if($getT == 1){   
+                        $insertRatingAction = $bdd->prepare("UPDATE questions SET likes = likes + ? WHERE id = ?");
+                        $insertRatingAction->execute(array($getId));
+                    }else{
+                        
+                    }
+
+                }
+
+                /*if($getT==1){
                     $ins = $bdd->prepare("INSERT INTO likes (id_article, id_membre) VALUES (?, ?)");
                     $ins->execute(array($getId, $_SESSION["id"]));
                 }elseif($getT==2){
                     $ins = $bdd->prepare("INSERT INTO likes (id_article) VALUES (?)");
                     $ins->execute(array($getId));
-                }
-                header("Location: ".$_SERVER["HTTP_REFERER"]."");
+                }*/
+                //header("Location: ".$_SERVER["HTTP_REFERER"]."");
             }else{
                 exit("Erreur fatale");
             }

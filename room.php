@@ -13,7 +13,7 @@ require('actions/channels/getChannels.php');
     <link rel="stylesheet" href="assets/css/modal.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/29ce918257.js" crossorigin="anonymous"></script>
-    <title>InterCollege | Rooms</title>
+    <title>NoName | Rooms</title>
 </head>
 <body>
 

@@ -37,7 +37,7 @@ main{
     background-color: #2d2e34;
     color: #F05454;
     display: flex;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 10px;
     transition: ease 1s;
     width: 100%;

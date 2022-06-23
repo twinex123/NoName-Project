@@ -12,7 +12,7 @@ require("actions/channels/getChannels.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publish a question | InterCollege</title>
+    <title>Publish a question | NoName</title>
     <link rel="stylesheet" href="assets/css/publish.css">
     <link rel="stylesheet" href="assets/css/scrollbar.css">
     <script src="assets/js/scroll.js"></script>
